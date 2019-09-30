@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Structura HTML-Formular 2.</h2>
+</body>
+<br>
+<form>
+    <div><p>Search for:
+      <input type="search" id="Search for:" name="Search for:"
+       placeholder="chocolate cheesecake recipies">
+      <button>Search</button>
+    </p></div>
+  </form>
+<form>
+<p>Match:
+<input type="radio" name="Match" value="Any words">Any words
+<input type="radio" name="Match" value="All words" checked>All words
+<input type="radio" name="Match" value="Exact phrase">Exact phrase<br>
+<input type="checkbox" name="Match" value="Sound-alike matching" checked>Sound-alike marching<br></p>
+</form> 
+<span>Dated:</span>
+<input type="radio" name="dateradio" id="datedyear" value="year">
+<select name="yearselector" id="yearselector">==$0
+<option value="lastyear">Within the last year</option>
+<option value="thisyear">Within this year</option>
+</select><br><br>
+<span>From:</span>
+<input type="radio" checked id="frominterval" name="dateradio" value="interval">
+<select name="startmonth" id="startmonth"></select>
+<select name="startday" id="startday">...</select>
+<span>,</span>
+<input type="number" id="startyear" name="startyear" min="2009" max="2011" value="2009"><br>
+<span>To:</span>
+<select name="endnomth" id="endmonth">...</select>
+<select name="endday" id="endday">...</select>
+<span>,</span>
+<input type="number" id="endyear" name="endyear" min="2009" max="2011" value="2011"><br>
+<p>Within:<select name="Within">
+<option value="Description"checked>Description</option></p></select>
+<p>Show:<select name="Show"><option value="10"cheecked>10</option></select>result<select name="result">
+<option value="with"checked>with</option></p></select>summaries
+<p>Sort by:<select name="Sort">
+<option value="relevance"cheecked>relevance</option></p></select>
+</html>
