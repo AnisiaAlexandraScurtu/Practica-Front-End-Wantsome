@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formular HTML</title>
+</head>
+<body>
+<h2>FORMULAR</h2>
+<p><b>Completati urmatoarele campuri:</b></p>
+</body>
+<br>
+<form>
+Nume*: <input type="text"name="Nume">
+<br><br>
+Prenume*: <input type="text" name="Prenume">
+</form>
+<p>Sex:</p>
+<form>
+<input type="radio" name="Sex" value="Feminin" checked>Feminin<br>
+<input type="radio" name="Sex" value="Masculin">Masculin<br>
+</form>
+<form>
+<p>Varsta:</p>
+<input type="checkbox" name="Varsta" value="18-30 ani"checked>18-30 ani<br>
+<input type="checkbox" name="Varsta" value="31-45 ani">31-45 ani<br>
+<input type="checkbox" name="Varsta" value="46-55 ani">46-55 ani<br>
+<input type="checkbox" name="Varsta" value="56-65 ani">56-65 ani<br>
+<input type="checkbox" name="Varsta" value="66-85 ani">66-85 ani
+</form>
+<form>
+<p>Selecteaza tara:</p>
+<select name="Tara">
+<option value="Romania"cheecked>Romania</option>
+</select>
+<br><br>
+<form>
+Oras:<input type="text"name="Oras">
+Adresa:<input type="text"name="Adresa">
+Cod postal:<input type="text"name="Cod postal">
+Telefon:<input type="text"name="Telefon">
+</form>
+<br>
+<form>
+Email*:<input type="email" name="email">
+</form>
+<br>
+<p>Mesaj:</p>
+<textarea name="mesaj" form="usr form"rows="10"col="30">Scrieti un mesaj aici...</textarea>
+<br><br>
+<form>
+Atasati CV-ul:<input type="file" name="myfile">
+</form>
+<br>
+<form action="/url-trimitere-formular">
+<input type="Submit" value="Trimite"><input type="Reset" value="Resetare">
+</form>
+<br>
+<p>* Campuri obligatorii</p>
+</html>
