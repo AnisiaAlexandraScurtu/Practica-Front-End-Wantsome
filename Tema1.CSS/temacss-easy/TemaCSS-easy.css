@@ -1,0 +1,29 @@
+.List1 a {
+    color: red;
+}
+.Link1 a {
+    color: green;
+    border: 1px solid black;
+}
+.Link2 a {
+    color: green;
+    border: 1px solid black;
+}
+.Link4 a {
+    color: green;
+    border:1px solid black;
+}
+#Link3 a {
+    color: #C55;
+    border: 1px solid black;
+}
+h1{
+    font-family: 'Grenze', serif;
+}
+h2{
+    font-family: 'Grenze', serif;
+}
+h3{
+    color:red;
+    font-family:'Mansalva', cursive;
+}
