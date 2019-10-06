@@ -1,0 +1,29 @@
+h2 {
+    font-family: 'Aladin', Arial;
+    font-size: 30px;
+}
+h2::first-letter{
+    color:red;
+   font-size: 50px;
+}
+h2::after {
+    content: "**";
+}
+h2{
+    background-color: aquamarine;
+    border: dotted;
+    border-color: blueviolet;
+}
+input[type=text]::selection {
+    color: blueviolet;
+    background: red;
+}
+input:focus{
+    background-color: yellow;
+}
+input[type="Submit"]:hover{
+    color:darkred;
+}
+input[type=radio]:checked { 
+    background-color: red; 
+}
