@@ -1,0 +1,53 @@
+ul li:nth-child(2), li:nth-child(4), li:nth-child(6){
+    color: green;
+}
+ul li:nth-child(1), li:nth-child(3), li:nth-child(5),li:nth-child(7){
+    color: purple;
+}
+ul li:nth-child(3){
+    background-color:lightblue;
+}
+li:nth-child(1){
+    border-style: solid;
+    border-width: 1px;
+    border-color: green;
+}
+li:nth-child(7){
+    border-style:dashed;
+    border-width: 5px;
+    border-color: blue;
+}
+li:nth-child(2), ul li:nth-child(5) {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+input:focus{
+    background-color: grey;
+}
+ul li:nth-child(3) :link{
+    color:red;
+}
+ul li:nth-child(5) :link {
+    color:red;
+}
+ul li:nth-child(5) :hover{
+    color: grey;
+}
+input[type=text]:nth-child(1){
+    color: green;
+  }
+input[type=text]:nth-last-child(2){
+    color: blue;
+  }
+input[type="password"]{
+    background-color:white ;
+    color:white;
+}
+input[type="Submit"]:hover{
+    color:red;
+}
+input[type="email"]::selection{
+    background:yellow;
+    color:pink;
+}
