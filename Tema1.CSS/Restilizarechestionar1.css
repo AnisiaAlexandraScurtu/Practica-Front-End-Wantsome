@@ -1,0 +1,33 @@
+h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    font-style: normal;
+    background-color: aqua;
+}
+h3{
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    background-color: bisque;
+}
+p{
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+    border: darkturquoise;
+    border:dashed;
+    border-color: red;
+}
+h2::first-line{
+    color: red;
+}
+h3::first-letter{
+    color:green;
+}
+input:focus{
+    background-color: blue;
+}
+input[type="Submit"]:hover{
+    color:plum;
+}
+input[type=radio]:checked { 
+    background-color: red; 
+}
