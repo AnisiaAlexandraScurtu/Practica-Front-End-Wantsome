@@ -1,0 +1,132 @@
+.main-container {
+    width: 1200px;
+    margin: auto;
+
+}
+
+.header-image {
+    width: 1000px;
+    height: 300px;
+    margin: auto;
+    background-image: url('sky.jpg');
+    background-repeat: no-repeat;
+}
+
+.header-content {
+    width: 1000px;
+    margin: auto;
+}
+
+#left {
+    width: 300px;
+    color: white;
+    padding: 15px 0px 0px 80px;
+    font-weight: bold;
+    float: left;
+}
+#right {
+    width: 300px;
+    color: white;
+    padding: 15px 0px 0px 50px;
+    float: right;
+}
+
+#title {
+    padding: 120px 0px 100px 0px;
+    color: white;
+    font-size: 30px;
+}
+
+.columns3 {
+    display: flex;
+    justify-content: space-evenly; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 800px;
+    margin: auto;
+}
+
+.left-column {
+    border-right: 1px solid;
+    padding-right: 10px;
+}
+
+.center-column {
+    border-right: 1px solid;
+    padding-right: 10px;
+}
+
+#button {
+    background-color: darkblue;
+    border: none;
+    color: white;
+    padding: 6px 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+.picturesone {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: lightskyblue;
+    width: 1000px;
+    height: 250px;
+    margin: auto;
+    align-items: flex-end;
+}
+.secondbox {
+    width: 1000px;
+    color:red;
+    float: top;
+}
+.picture-1 {
+    border: white solid 1px;
+    color:white;   
+}
+.picture-2 {
+    border: white solid 1px;
+    color: white;
+}
+.picture-3 {
+    border: white solid 1px;
+    color: white;
+}
+.picture-4 {
+    border: white solid 1px;
+    color:white;
+}
+
+.title-2 {
+    background-color: lightskyblue;
+    width: 1000px;
+    margin: auto;
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    color: white;
+}
+
+.nunc {
+    background-color: white;
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.picturestwo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: white;
+    padding: 0 200px 0 200px;
+}
+
+.footer{
+    display: fixed;
+    border-top: solid black 1px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+
