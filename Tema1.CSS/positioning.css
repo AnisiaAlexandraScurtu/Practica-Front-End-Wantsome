@@ -1,0 +1,51 @@
+
+.container{
+    position:relative;
+    border:3px solid green
+}
+
+.section-1{
+    width:1400px;
+    height:50px;
+    border:solid orange;
+    position:static;
+    top:5px;
+    margin-left:100px;
+}
+
+.section-2{
+    width:1400px;
+    height:100px;
+    border:solid orange;
+    position:static;
+    top:5px;
+    margin-left:100px;
+}
+
+.section-3{
+    width:1400px;
+    height:50px;
+    border:solid orange;
+    position:static;
+    top:5px;
+    margin-left:100px;
+}
+
+.menu{
+    position:absolute;
+    left:0px;
+    width:100px;
+    border:3px solid fuchsia;
+    color: violet;
+}
+
+footer{
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    height:70px;
+    background-color: white;
+    width:1600px;
+    border:solid greenyellow;
+    text-align:center;
+}
