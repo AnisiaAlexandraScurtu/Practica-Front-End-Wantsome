@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width"> 
+    </head>
+    <body>
+        <h1>JavaScript Strings</h1>
+        <p>Strings</p>  
+        
+        <script>
+                function sir (variabila_de_verificat) {	
+                    var variabila_de_verificat;
+                    console.log(typeof variabila_de_verificat);
+                };	
+                sir('w3resoureces');
+                sir(1, 2, 4, 0)                
+        </script>
+
+        <script>
+            function transform (){
+            var str = "Robin, Singh";
+            var string_to_array = str.split (",");
+            console.log(string_to_array) // ["Robin", "Singh"]
+            }
+            transform("Robin", "Singh");
+        </script>
+        <script>
+            function abrev(){
+                var str = "Robin Singh";
+                var abrev_name = str.substr (0, 7);
+                console.log(abrev_name);
+            }
+            abrev();
+        </script>
+
+        <script>
+            function letter(){
+                var str = 'js string exercise';
+                var capitalize = str.charAt(0).toUpperCase()+str.slice(1);
+                console.log(capitalize);
+            }
+            letter();
+        </script>
+
+        <script>
+            function isBlank(s){
+            return isEmpty(s.trim());    
+            }
+            isBlank();
+        </script>
+
+        <script>
+            function characterOne(){
+                var str = "Robin Singh";
+                var truncate_string = str.substr(0, 4);
+                console.log(truncate_string);
+            }
+            characterOne();
+        </script>
+
+        <script>
+            function practice(){
+                var exercices = "We are doing some ";
+                var javaScr = "JavaScript ";
+                var position = "exercices.";
+                var result = exercices.concat(javaScr, position);
+                console.log(result);
+            }
+            practice();
+        </script>
+
+        <script>
+            function jump(){
+                var str = "The quick brown fox jumps over the lazy dog";
+                var remove_first_occurence = str.replace('the' , '');
+                console.log(remove_first_occurence);
+            }
+            jump();
+        </script>
+    
+    </body>  
+</html>
