@@ -1,23 +1,24 @@
-//cerinta 1
-//1. Scrieti o functie sub forma named function care accepta ca argument un CNP si verifica sexul unei persoane. 
-//In urma apelului acestei functii, se va returna un text de forma "Persoana verificata este de sexul M/F".
+//cerinta 1-pseudocod
+//Denumesc functia, adaug parametrul apoi deschid corpul functiei;
+//doresc ca in momentul in care parametrul ia valoarea 2 (sex F), sa mi se returneze "Persoana verificata este de sexul F";
+//folosesc If, daca a are valoarea 2 atunci returneaza "Persoana verificata este de sexul F";
+//daca a nu va lua valoarea 2, atunci sa mi se returneze "Persoana verificata este de sexul M";
+//in consola daca pun valoarea doi la parametru, va returna "Persoana verificata este de sexul F",
+//iar daca pun alta valoare, va returna "Persoana verificata este de sexul M".
 
-function namedFunction (cnp){
-   if (cnp) {
-       return "Persoana verificata este de sexul M/F";
+function namedFunction (a) {
+   if (a == 2) {
+       return "Persoana verificata este de sexul F";
+   } else {
+       return "Persoana verificata este de sexul M";
    }
 }
-console.log(namedFunction(2547567335467));
+console.log(namedFunction(2));
 
-//cerinta 2
-//2. Scrieti o functie sub forma function expression care accepta ca argument o valoare numerica 
-//cuprinsa intre 1 si 10 si decide calificativul punctajului. Criteriile sunt urmatoarele:
-//- 1-3 = E
-//- 3-6 = D
-//- 7-8 = B
-//- 9 = A
-//- 10 = A+
-//Functia va returna un text de forma "Calificatul corespunzator punctajului [punctaj] este [calificativ]".
+//cerinta 2-pseudocod
+//Denumesc variabila, adaug parametrul functiei, apoi deschid corpul functiei;
+//daca parametrul qualifying va lua valoarea primului interval atunci va returna calificativul corespunzator acestui punctaj (E);
+//folosesc else if pentru celelalte calificative, fiecare returnand calificativul corespunzator intervalului de punctaj;
 
 var numericValue = function(qualifying) {
     if (qualifying === 1-3) {
@@ -32,17 +33,21 @@ var numericValue = function(qualifying) {
         return "Calificatul corespunzator punctajului 10 este A+";
     }   
 }
-console.log(numericValue(3-6));
+console.log(numericValue(10));
 
-//cerinta 3
-//Scrieti o functie care accepta ca argument numele marcii unei masini si 
-//returneaza un text de forma: "Marca [marca] se produce in [tara]". 
-//rebuie sa aveti macar 6 cazuri. In cazul in care functia nu recunoaste marca, va returna "Marca este necunoscuta. " 
-//Scrieti codul in 3 variante diferite. In declararea functiei trebuie sa se regaseasca o functie anonima. 
+//cerinta 3-pseudocod
+//Denumesc variabila, adaug parametrul functiei, apoi deschid corpul functiei;
+//daca parametrul brand va lua valoarea primei masini, 
+//atunci va returna tara in care se produce masina (Ex: "Marca Mercedes se produce in Germania);
+//folosesc else if pentru celelalte branduri, fiecare returnand tara corespunzatoare;
+//am folosit 3 variante(asta daca am inteles eu bine):named function, anonymous function si switch.
+
 //Una dintre implementari trebuie sa fie 
 //bazata pe Object Literals ( read:  https://ultimatecourses.com/blog/deprecating-the-switch-statement-for-object-literals )
+//nu am inteles exact ce presupune object literals
 
 //Named function
+
 function car (brand) {
     if (brand === "Mercedes") {
         return "Marca Mercedes se produce in Germania";
@@ -62,76 +67,65 @@ function car (brand) {
 }
 console.log(car("Lexus"));
 
-//function expression???
-var myCar = function (brand) {
-    if (brand === "Mercedes") {
-        return "Marca Mercedes se produce in Germania";
-    }else if (brand === "Skoda") {
-        return "Marca Skoda se produce in Cehia";
-    }else if (brand === "Bugatti") {
-        return "Marca Bugatti se produce in Italia";
-    }else if (brand === "Kia") {
-        return "Marca Kia se produce in China";
-    } else if (brand === "Nissan") {
-        return "Marca Nissan se produce in Coreea";
-    }else if (brand === "Lexus") {
-        return "Marca Lexus se produce in UK";
-    }else {
-        return "Marca este necunoscuta";
-    }
-}
-console.log(myCar("BMW"));
 
 //anonymous function
-function x (brand) {
-    if (brand === "Mercedes") {
-        return "Marca Mercedes se produce in Germania";
-    }else if (brand === "Skoda") {
-        return "Marca Skoda se produce in Cehia";
-    }else if (brand === "Bugatti") {
-        return "Marca Bugatti se produce in Italia";
-    }else if (brand === "Kia") {
-        return "Marca Kia se produce in China";
-    } else if (brand === "Nissan") {
-        return "Marca Nissan se produce in Coreea";
-    }else if (brand === "Lexus") {
-        return "Marca Lexus se produce in UK";
-    }else {
-        return "Marca este necunoscuta";
-    }
-}
-console.log(x("BMW"));
 
-//implementare bazata pe Object Literals
-switch (car) {
-    case "Mercedes": "Marca Mercedes se produce in Germania";
-    break;
-    case "Skoda": "Marca Skoda se produce in Cehia";
-    break;
-    case "Bugatti": "Marca Bugatti se produce in Italia";
-    break;
-    case "Kia": "Marca Kia se produce in China";
-    break;
-    case "Nissan": "Marca Nissan se produce in Coreea";
-    break;
-    case "Lexus": "Marca Lexus se produce in UK";
-    break;
-    default: "Marca este necunoscuta";
-}
-console.log(car("Lexus"))
+// function (brand) {
+//     if (brand === "Mercedes") {
+//         return "Marca Mercedes se produce in Germania";
+//     }else if (brand === "Skoda") {
+//         return "Marca Skoda se produce in Cehia";
+//     }else if (brand === "Bugatti") {
+//         return "Marca Bugatti se produce in Italia";
+//     }else if (brand === "Kia") {
+//         return "Marca Kia se produce in China";
+//     } else if (brand === "Nissan") {
+//         return "Marca Nissan se produce in Coreea";
+//     }else if (brand === "Lexus") {
+//         return "Marca Lexus se produce in UK";
+//     }else {
+//         return "Marca este necunoscuta";
+//     }
+// }
+// console.log(x("BMW"));
 
-//cerinta 4
-//Scrieti o functie de tip IIFE care:
-//- sorteaza urmatorul array in functie de proprietatea "salary" a fiecarui obiect continut:
-//var cars = [
- // {name: "John",  salary: 20000 },
-  //{ name: "Danny", salary: 30500 },
- // { name: "Bekker", salary: 15000 }
-//];
-//- afiseaza in consola array-ul sortat
+//switch
+
+// switch (car) {
+//     case "Mercedes": "Marca Mercedes se produce in Germania";
+//     break;
+//     case "Skoda": "Marca Skoda se produce in Cehia";
+//     break;
+//     case "Bugatti": "Marca Bugatti se produce in Italia";
+//     break;
+//     case "Kia": "Marca Kia se produce in China";
+//     break;
+//     case "Nissan": "Marca Nissan se produce in Coreea";
+//     break;
+//     case "Lexus": "Marca Lexus se produce in UK";
+//     break;
+//     default: "Marca este necunoscuta";
+// }
+// console.log(car("Lexus"))
 
 
+//cerinta 4-pseudocod
+// incep declararea functiei IIFE
+// vreau ca functia mea sa sorteze datele in ordine crescatoare
+// am incercat varianta de mai jos, dar aparent nu functioneaza.
 
+(function (name, salary) {
+    var cars = [
+        {name: "John",  salary: 20000 },
+        { name: "Danny", salary: 30500 },
+        { name: "Bekker", salary: 15000 }
+      ];
+    var sorted = cars.sort(function(name, salary){
+        return cars[name]- cars[salary]
+    });
+   
+})();
+console.log("John", 20000);
 
 
 
