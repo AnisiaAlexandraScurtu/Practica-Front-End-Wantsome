@@ -25,7 +25,7 @@ var numericValue = function(qualifying) {
         return "Calificatul corespunzator punctajului 1-3 este E";
     }else if (qualifying > 3 && qualifying <= 6 ) {
         return "Calificatul corespunzator punctajului 3-6 este D";// aici am pus interval de la 4 deoarece 
-        //daca pun de la 3 imi da prima varianta de calificativ
+        //daca pun de la 3 imi da prima varianta de calificativ, m-am gandit ca ar fi trebuit sa fie 4-6
     }else if (qualifying >=7  && qualifying <= 8) {
         return "Calificatul corespunzator punctajului 7-8 este B";
     }else if (qualifying === 9) {
@@ -34,7 +34,7 @@ var numericValue = function(qualifying) {
         return "Calificatul corespunzator punctajului 10 este A+";
     }   
 }
-console.log(numericValue(7));
+console.log(numericValue(4));
 
 //cerinta 3-pseudocod
 //Denumesc variabila, adaug parametrul functiei, apoi deschid corpul functiei;
